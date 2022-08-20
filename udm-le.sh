@@ -7,7 +7,7 @@ set -e
 
 # Setup variables for later
 DOCKER_VOLUMES="-v ${UDM_LE_PATH}/lego/:/.lego/"
-LEGO_ARGS="--dns ${DNS_PROVIDER} --email ${CERT_EMAIL} --key-type rsa2048"
+LEGO_ARGS="--server ${ACME_SERVER} --dns ${DNS_PROVIDER} --email ${CERT_EMAIL} --key-type rsa2048"
 RESTART_SERVICES=false
 
 # Show usage
